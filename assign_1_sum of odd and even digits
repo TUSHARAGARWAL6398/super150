@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int number=sc.nextInt();
+        int rem,odd=0,even=0;
+        int i=1;
+        while(number>0){
+            rem=number%10;
+            if(i%2==1){
+                odd=odd+rem;
+            }
+            else{
+                even=even+rem;
+            }
+            number=number/10;
+            i++;
+
+            
+        }
+        System.out.println(odd);
+        System.out.println(even);
+
+
+    }
+}
